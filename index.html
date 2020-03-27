@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OFIYOGI | yoga & mindfulness para las empresas</title>
+	<meta name="description" content="Yoga y meditación para empresas. Para todo tipos de espacios, sin material, sin necesidad de cambiarse.Clases particulares y en grupo, coaching de directivos, seminarios y eventos. " />
+	<meta name="keywords" content="yoga madrid, yoga para empresas, mindfulness, estres, coaching directivos, seminarios, eventos, yoga oficina, yoga trabajo, absentismo laboral, yoga en la silla, ambiente laboral saludable, clases yoga" />
+	<meta name="author" content="Julen Aranguren"/>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112247047-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-112247047-1');
+	</script>
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.js" defer></script>
+    <script src="./js/Projector.js" defer></script>
+    <script src="./js/CanvasRenderer.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" charset="utf-8" defer></script>
+    <script src="./js/waves.js" charset="utf-8" defer></script>
+    <script src="./js/index.js" charset="utf-8" defer></script>
+    <script src="js/shapeOverlay.js" charset="utf-8" defer></script>
+  </head>
+  <!--BODY START-->
+  <body class="shape-overlay">
+    <!--EXIT MODAL-->
+    <div id="infomodal" class="modal hidden">
+      <form action="https://formspree.io/info@ofiyogi.com"method="POST">
+        <div class="closemodal">X</div>
+        <div class="modalttl">QUIERES ESTAR AL TANTO DE LAS NOVEDADES DE OFIYOGI ?</div>
+        <div class="modalsubttl">Déjanos tu mail</div>
+        <input type="email" name="_replyto" placeholder="ejemplo@mail.com">
+        <input class="modalsubmit" type="submit" value="Enviar">
+      </form>
+    </div>
+    <!--MAIL MODAL-->
+    <div id="mailmodal" class="modal hidden">
+      <form action="https://formspree.io/info@ofiyogi.com" method="POST">
+        <div class="closemodal">X</div>
+        <div class="modalttl">CONTÁCTANOS</div>
+        <div class="modalsubttl">Tu mail</div>
+        <input type="email" name="_replyto" placeholder="ejemplo@mail.com">
+        <div class="modalsubttl">Tu mensaje</div>
+        <textarea name="text" rows="4"  maxlength="500" placeholder="Escribe aquí tu mensaje..."></textarea>
+        <input class="modalsubmit" type="submit" value="Enviar">
+      </form>
+    </div>
+    <!--SVG SHAPE OVERLAY-->
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="shape-overlays__path"></path>
+    </svg>
+    <!--MAIN SECTION-->
+    <section id='home'>
+      <div class="layer" style="z-index:1;display:grid;">
+      <div class="social">
+        <a id="fb" class="social-btn" href="https://www.facebook.com/OFIYOGI/" target="blank_" tooltip='Facebook' flow="down" style="cursor: pointer"></a>
+        <a id="inst" class="social-btn" href="https://www.instagram.com/ofiyogi/?hl=es" target="blank_" tooltip='Instagram' flow="down" style="cursor: pointer"></a>
+      </div>
+      <div id="logolayer">
+        <div id='logo' ><div id='head'></div></div>
+        <h1 class='ttl'>OFI<strong>YOGI</strong></h1>
+        <h2 class='subttl'>La nueva forma de hacer yoga en la oficina</h2>
+        <div  id="about" style="cursor: pointer">¿ Que ofrecemos ?</div>
+      </div>
+      </div>
+    </section>
+    <!--ABOUT MODAL-->
+    <div id="aboutTxt" class="hidden">
+      <div id="yogi" class="hidden"></div>
+      <p><strong>Objetivo</strong>: OFIYOGI ha sido creado en respuesta a las necesidades y problemas de empleados que pasan el día entero en la oficina y que tienen un estilo de vida sedentario.
+      Practicar yoga disminuye el estrés y los niveles de ansiedad y mejora la concentración. Además, ayuda a prevenir los trastornos musculo-esqueléticos causantes del 80% de las bajas laborales.<br><br>
+      <strong>Beneficios para las empresas y los empleados</strong>: tus empleados saben qué quieres valorar la calidad de vida en tu empresa: aumenta la confianza y el engagement. Practicar una actividad de grupo como el yoga, sin jerarquía ni competición, mejora las relaciones entre los empleados.<br><br>
+      <strong>Por qué OFIYOGI</strong>: un método específico desarrollado con profesores de yoga y osteópatas, que se adapta a todo tipo de espacio, sin necesidad de cambiarse o de tener material. Nos adaptamos también al ritmo de tu empresa y a los picos de trabajo como a los periodos más tranquilos. <br><br>
+      <strong>Qué ofrecemos</strong>: clases de yoga y sesiones de meditación para empresas de todos los sectores, en grupo o individuales. Además proponemos talleres y actividades colectivas para tus seminarios y eventos de empresa.<br><br>
+      Para más <strong>información</strong> contáctanos a <span  id="mailto">info@ofiyogi.com</span> o en el <strong>627009012</strong>
+      </p>
+      <div  id="return" tooltip='Volver' flow="left" class="hidden">&#8594;</div>
+    </div>
+    <!--END BODY-->
+  </body>
+</html>

@@ -1,0 +1,680 @@
+/* GENERAL */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* WAVES */
+
+#waves{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* SHAPE OVERLAY */
+
+.shape-overlays__path {
+  fill: #F2F8EE;
+}
+
+.shape-overlays {
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* MAIN */
+
+#home {
+  background: #e3d081;
+  background: -moz-linear-gradient(top, #e3d081 34%, #91c7b1 100%);
+  background: -webkit-linear-gradient(top, #e3d081 34%, #91c7b1 100%);
+  background: linear-gradient(to bottom, #e3d081 34%, #91c7b1 100%);
+}
+
+.ttl {
+  color: #42383A;
+  font-size: 5.5vmin;
+  font-weight: 400;
+  margin: 2vmin;
+  text-align: center;
+}
+
+.subttl {
+  color: #42383A;
+  font-size: 2.5vmin;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* SOCIAL */
+
+.social {
+  justify-self: end;
+}
+
+.social-btn {
+  display: inline-block;
+  height: 5vmin;
+  width: 5vmin;
+  margin: 2em;
+  margin-left: 1vmin;
+  cursor: pointer;
+}
+
+#fb {
+  background-image: url("../resources/Socialfb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#inst {
+  background-image: url("../resources/SocialInst.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* LOGO */
+
+#logolayer {
+  left: 50%;
+  position: absolute;
+  top: 20vh;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+#logo {
+  background-image: url("../resources/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35vmin;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  width: 35vmin;
+  z-index: 2;
+}
+
+#head {
+  background-image: url("../resources/front.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 35vmin;
+  transform: translateZ(15px);
+  width: 35vmin;
+}
+
+/* ABOUT */
+
+#about {
+    background-color: #f2f8ee00;
+    color: #43373a;
+    border: 0.25vmin solid #67675a;
+    padding: 1vmin;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vmin;
+    font-weight: 400;
+    margin-top: 5vmin;
+    text-align: center;
+    cursor: pointer;
+}
+
+#aboutTxt {
+  color: #42383A;
+font-size: 1em;
+line-height: 3vmin;
+padding: 10vmin;
+position: absolute;
+text-align: left;
+top: 0;
+z-index: 4;
+}
+
+#aboutTxt p {
+  display: inline-block;
+  padding: 5vmin;
+  width: 60%;
+}
+
+#yogi {
+  background-image: url(../resources/yogi.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block !important;
+  height: 50vmin;
+  width: 30%;
+}
+
+@keyframes returnAnim {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(1vmin);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#return {
+  align-self: end;
+  color: #42383A;
+  cursor: pointer;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vmin;
+  font-weight: 700;
+  justify-self: end;
+  margin: -5vmin 0vmin 3.5vmin 0;
+}
+
+
+#mailto {
+  color: #42383A;
+  cursor: pointer;
+  display: inline;
+  font-weight: 700;
+  text-decoration: underline dotted #42383A;
+}
+
+#mailto:hover {
+  color: #81ad9b;
+  cursor: pointer;
+  text-decoration: underline dotted #81ad9b;
+  transition: all 0.15s ease-in;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* MODAL */
+
+.modal {
+  background-color: #619a83c7;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  z-index: 9999999;
+}
+
+.modal form {
+  background-color: #F2F8EE;
+  border-radius: 2vmin;
+  -webkit-box-shadow: 0px 0px 7vmin 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 7vmin 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 7vmin 0 rgba(0, 0, 0, 0.1);
+  height: 43vmin;
+  margin: 0 auto;
+  margin-top: 20vh;
+  padding: 5vmin;
+  width: 85vmin;
+}
+
+form input {
+  color: #43373a;
+  background-color: white;
+  border: none;
+  border-radius: 10vmin;
+  box-shadow: 0 0 2vmin 0 rgba(191, 187, 179, 0.26);
+  display: block;
+  font-size: 1.75vmin;
+  margin-left: 4vmin;
+  outline: none;
+  padding: 1vmin 2vmin;
+  padding-left: 2vmin;
+  width: 30vmin;
+}
+
+form textarea {
+  color: #43373a;
+  background-color: white;
+  border: none;
+  border-radius: 2vmin;
+  box-shadow: 0 0 2vmin 0 rgba(191, 187, 179, 0.26);
+  display: block;
+  font-size: 1.75vmin;
+  height: 10vmin;
+  margin-left: 4vmin;
+  padding: 1vmin 2vmin;
+  padding-left: 2vmin;
+  resize: none;
+  outline: none;
+  width: 75vmin;
+}
+
+.modalsubmit {
+  display: block;
+  float: right;
+  margin: 2vmin;
+  border-radius: 2vmin;
+  border: none;
+  width: 13vmin;
+  box-shadow: 0 0 2vmin 0 rgba(191, 187, 179, 0.26);
+  color: #F2F8EE;
+  background-color: #43373a;
+  font-size: 2vmin;
+}
+
+.modalsubmit:hover {
+  background-color: #83af9c;
+  transform: translateX(1vmin);
+  transition: all 0.15s ease-in;
+}
+
+.modalttl {
+  color: #42383A;
+  border-left: 0.5vmin solid;
+  font-size: 3.5vmin !important;
+  font-weight: 400;
+  margin-bottom: 1.5vmin;
+  margin-top: 0.5vmin;
+  padding-left: 2.5vmin;
+}
+
+.modalsubttl {
+  color: #42383A;
+  font-size: 2.5vmin !important;
+  font-weight: 400;
+  padding: 2vmin 4vmin;
+}
+
+.closemodal {
+  color: #a79a9c;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.5vmin;
+  margin-right: -2vmin;
+  margin-top: -3vmin;
+  text-align: right;
+}
+
+.closemodal:hover {
+  color: #42383A;
+  transition: all 0.25s ease-in;
+}
+
+#infomodal form {
+  height: 30vmin;
+  margin-top: 30vh;
+}
+
+/* TOOLTIPS */
+
+/* START TOOLTIP STYLES */
+
+[tooltip] {
+  position: relative;
+  /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+
+[tooltip]::before, [tooltip]::after {
+  text-transform: none;
+  /* opinion 2 */
+  font-size: 0.85em;
+  /* opinion 3 */
+  font-weight: 400;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+[tooltip]::before {
+  content: '';
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+  /* magic! */
+  /* most of the rest of this is opinion */
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  /*
+    Let the content set the size of the tooltips
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0.5ch 1ch;
+  border-radius: .3ch;
+  box-shadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.05);
+  background: #F2F8EE;
+  color: #55494B;
+  margin-top: 1vmin;
+  z-index: 1000;
+  /* absurdity 2 */
+}
+
+/* Make the tooltips respond to hover */
+
+[tooltip]:hover::before, [tooltip]:hover::after {
+  display: block;
+}
+
+/* don't show empty tooltips */
+
+[tooltip='']::before, [tooltip='']::after {
+  display: none !important;
+}
+
+/* FLOW: UP */
+
+[tooltip]:not([flow])::before, [tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #F2F8EE;
+}
+
+[tooltip]:not([flow])::after, [tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+  font-size: 0.2em !important;
+}
+
+[tooltip]:not([flow])::before, [tooltip]:not([flow])::after, [tooltip][flow^="up"]::before, [tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+
+/* FLOW: DOWN */
+
+[tooltip][flow^="down"]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #F2F8EE;
+  margin-top: 1.1vmin;
+}
+
+[tooltip][flow^="down"]::after {
+  top: calc(100% + 5px);
+}
+
+[tooltip][flow^="down"]::before, [tooltip][flow^="down"]::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+
+/* FLOW: LEFT */
+
+[tooltip][flow^="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #F2F8EE;
+  left: calc(0em - 5px);
+  transform: translate(-.5em, -50%);
+}
+
+[tooltip][flow^="left"]::after {
+  font-size: 0.3em !important;
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translate(-.5em, -50%);
+  margin-top: 0.6vmin !important;
+}
+
+/* FLOW: RIGHT */
+
+[tooltip][flow^="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #F2F8EE;
+  right: calc(0em - 5px);
+  transform: translate(.5em, -50%);
+}
+
+[tooltip][flow^="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+
+/* KEYFRAMES */
+
+@keyframes tooltips-vert {
+  to {
+    opacity: .9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: .9;
+    transform: translate(0, -50%);
+  }
+}
+
+/* FX All The Things */
+
+[tooltip]:not([flow]):hover::before, [tooltip]:not([flow]):hover::after, [tooltip][flow^="up"]:hover::before, [tooltip][flow^="up"]:hover::after, [tooltip][flow^="down"]:hover::before, [tooltip][flow^="down"]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+[tooltip][flow^="left"]:hover::before, [tooltip][flow^="left"]:hover::after, [tooltip][flow^="right"]:hover::before, [tooltip][flow^="right"]:hover::after {
+  animation: tooltips-horz 300ms ease-out forwards;
+}
+
+/* @QUERIES */
+
+@media(min-width:650px){
+  #about:hover {
+    background-color: #f2f8ee;
+    border: 0.25vmin solid #f2f8ee;
+    transform: translateY(-1vmin);
+    transition: 0.05s all ease-in;
+  }
+  .social-btn:hover {
+    transform: translateY(-1vmin);
+    transition: 0.1s all ease-in
+  }
+  #return:hover {
+    -webkit-animation: returnAnim 1s infinite;
+    -moz-animation: returnAnim 1s infinite;
+    -o-animation: returnAnim 1s infinite;
+    animation: returnAnim 1s infinite;
+  }
+}
+
+@media(max-width:1180px) {
+  #aboutTxt {
+    padding: 2vmin;
+  }
+  #yogi {
+    height: 40vmin;
+  }
+}
+
+@media(max-width:1020px) {
+  #yogi {
+    display: none !important;
+  }
+
+  #aboutTxt p {
+    width: 90%;
+  }
+}
+
+@media(max-width:992px) {
+  #logo {
+    height: 45vmin;
+    width: 45vmin;
+  }
+  #head {
+    height: 45vmin;
+    width: 45vmin;
+  }
+
+  #about {
+    margin-top: 0vmin;
+}
+}
+
+@media(max-width:750px) {
+  #infomodal form {
+    height: 45vmin;
+  }
+  .social-btn {
+    height: 8vmin;
+    width: 8vmin;
+  }
+  #about {
+    font-size: 5vmin;
+    margin-top: 5vmin;
+}
+  h2 {
+    margin: 0;
+    font-size: 3.5vmin;
+  }
+  h1 {
+    font-size: 6.5vmin !important;
+  }
+  #logolayer {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .modal form {
+    height: 60vmin;
+  }
+  .closemodal {
+    font-size: 4.5vmin;
+  }
+  .modalttl {
+    font-size: 5vmin !important;
+    border-left: 0.75vmin solid;
+  }
+  .modalsubttl {
+    font-size: 3.5vmin !important;
+  }
+  form input {
+    font-size: 2.75vmin;
+  }
+  form textarea {
+    height: 17vmin;
+    font-size: 2.75vmin;
+  }
+  .modalsubmit {
+    width: 15vmin;
+    font-size: 3vmin;
+  }
+}
+
+@media(max-width:650px) {
+  .subttl {
+    font-size: 4.5vmin;
+}
+  #aboutTxt {
+    line-height: 4vmin;
+  }
+  #logo {
+    height: 65vmin;
+    width: 65vmin;
+  }
+  #head {
+    height: 65vmin;
+    width: 65vmin;
+  }
+  .social-btn {
+    height: 10vmin;
+    width: 10vmin;
+  }
+  #about {
+    font-size: 6vmin;
+    margin-top: 5vmin;
+    border: 0.45vmin solid #43373a;
+    padding: 2vmin;
+}
+  h1 {
+    font-size: 9.5vmin !important;
+  }
+  h2 {
+    font-size: 4.5vmin;
+  }
+  #return {
+    font-size: 10vmin;
+    margin-top: 0vmin;
+  }
+}
+
+@media(max-width:575px) {
+  #infomodal form {
+    margin-top: 25vh;
+    height: 70vmin;
+  }
+  .modal form {
+    height: 90vmin;
+    border-radius: 4vmin;
+    margin-top: 17vh;
+  }
+  .closemodal {
+    font-size: 6.5vmin;
+  }
+  .modalttl {
+    font-size: 7vmin !important;
+    border-left: 1vmin solid;
+  }
+  .modalsubttl {
+    font-size: 4.5vmin !important;
+  }
+  form input {
+    font-size: 3.75vmin;
+    width: 50vmin;
+  }
+  form textarea {
+    height: 36vmin;
+    font-size: 3.75vmin;
+  }
+  .modalsubmit {
+    width: 18vmin;
+    font-size: 4vmin;
+  }
+}
+
+@media(max-width:450px) {
+  #logo {
+    height: 75vmin;
+    width: 75vmin;
+  }
+  #head {
+    height: 75vmin;
+    width: 75vmin;
+  }
+  #aboutTxt {
+    line-height: 5vmin;
+  }
+  #return {
+    font-size: 10vmin;
+    margin-top: 0vmin;
+  }
+}
+
+.layer {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
